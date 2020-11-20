@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 标题样式 */
+.app {
+  height: 120px;
+  width: 100%;
+  background: url(../img/app.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto 120px; }
+  .app a {
+    display: block;
+    width: 1226px;
+    height: 120px;
+    margin: 0 auto; }
+
+.nav {
+  width: 100%;
+  background-color: #333333; }
+  .nav div {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto; }
+    .nav div .nav_l {
+      height: 40px;
+      float: left; }
+      .nav div .nav_l a {
+        height: 40px;
+        padding: 0 5px;
+        line-height: 40px;
+        display: block;
+        font-size: 12px;
+        float: left;
+        color: #b0b0b0; }
+        .nav div .nav_l a:hover {
+          color: #fff; }
+      .nav div .nav_l span {
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 40px; }
