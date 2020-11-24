@@ -124,3 +124,216 @@
     .info .slogn img {
       display: block;
       margin: 0px auto; }
+
+.container {
+  width: 1226px;
+  margin: 0 auto; }
+
+.box-s, .head-b, #headbox .head .search input, #headbox .showsp div a {
+  box-sizing: border-box; }
+
+.tc, #headbox .head .head-nav ul li a {
+  text-align: center; }
+
+.nav {
+  width: 100%;
+  background-color: #333333; }
+  .nav .navbox {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto; }
+    .nav .navbox .nav_l {
+      width: 800px;
+      height: 40px;
+      float: left; }
+      .nav .navbox .nav_l a {
+        height: 40px;
+        padding: 0 5px;
+        line-height: 40px;
+        display: block;
+        font-size: 12px;
+        float: left;
+        color: #b0b0b0; }
+        .nav .navbox .nav_l a:hover {
+          color: #fff; }
+      .nav .navbox .nav_l span {
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 40px; }
+    .nav .navbox .shoppingcat {
+      width: 120px;
+      height: 40px;
+      float: right;
+      background-color: #424242; }
+      .nav .navbox .shoppingcat a {
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        text-align: center;
+        color: #b0b0b0; }
+        .nav .navbox .shoppingcat a .show {
+          position: absolute;
+          top: 40px;
+          left: -196px;
+          width: 316px;
+          height: 100px;
+          background-color: pink;
+          display: none; }
+    .nav .navbox .nav_r {
+      width: 200px;
+      height: 40px;
+      float: right; }
+      .nav .navbox .nav_r a {
+        height: 40px;
+        padding: 0 5px;
+        line-height: 40px;
+        display: block;
+        font-size: 12px;
+        float: left;
+        color: #b0b0b0; }
+        .nav .navbox .nav_r a:hover {
+          color: #fff; }
+      .nav .navbox .nav_r span {
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 40px; }
+
+.h-wh, #headbox .head .logo, #headbox .head .head-nav, #headbox .head .head-nav ul {
+  height: 100px;
+  float: left; }
+
+.nav-active a {
+  color: orange; }
+
+.show-active {
+  display: block; }
+
+.head-b {
+  border-bottom: 1px solid silver; }
+
+#headbox {
+  width: 100%; }
+  #headbox .head {
+    position: relative;
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto; }
+    #headbox .head .logo {
+      width: 100px; }
+      #headbox .head .logo a {
+        display: block;
+        width: 55px;
+        height: 55px;
+        position: relative;
+        top: 22px;
+        background-color: #FF6700; }
+        #headbox .head .logo a:hover {
+          content: url(../img/mi-home.png); }
+        #headbox .head .logo a:after {
+          content: url(../img/mi-logo.png);
+          position: absolute;
+          width: 49px;
+          height: 49px;
+          background-position: 10px 10px;
+          top: 4px;
+          left: 4px; }
+    #headbox .head .allsp {
+      position: relative;
+      float: left;
+      width: 116px;
+      height: 16px;
+      font-size: 16px;
+      padding: 42px 0;
+      margin-right: 20px; }
+      #headbox .head .allsp:hover .list {
+        display: block; }
+      #headbox .head .allsp .list {
+        display: none;
+        position: absolute;
+        width: 234px;
+        height: 420px;
+        top: 100px;
+        left: -99px;
+        background-color: #fff;
+        box-shadow: 0 5px 5px #aaa7ad;
+        z-index: 999;
+        padding: 20px 0; }
+        #headbox .head .allsp .list li {
+          height: 42px;
+          padding: 0 0 0 30px; }
+          #headbox .head .allsp .list li a {
+            font-size: 14px;
+            line-height: 42px;
+            color: #5d5b5f; }
+          #headbox .head .allsp .list li:hover {
+            background-color: #FF6700; }
+    #headbox .head .head-nav {
+      width: 650px; }
+      #headbox .head .head-nav ul li {
+        float: left; }
+        #headbox .head .head-nav ul li a {
+          display: block;
+          padding: 0 10px;
+          line-height: 100px;
+          font-size: 16px; }
+    #headbox .head .search {
+      width: 300px;
+      padding: 25px 0;
+      height: 50px;
+      float: right; }
+      #headbox .head .search input {
+        width: 250px;
+        height: 50px;
+        border: 1px solid gainsboro;
+        float: left;
+        font-size: 16px; }
+      #headbox .head .search button {
+        float: left;
+        width: 50px;
+        height: 50px;
+        border: 1px solid gainsboro;
+        border-left: unset; }
+  #headbox .showsp {
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: darkgrey 0 5px 5px; }
+    #headbox .showsp div {
+      margin: 0 auto;
+      height: 200px;
+      width: 1226px; }
+      #headbox .showsp div a {
+        float: left;
+        display: block;
+        width: 204px;
+        height: 200px;
+        text-align: center;
+        font-size: 12px;
+        padding-top: 30px; }
+        #headbox .showsp div a img {
+          display: block;
+          width: 160px;
+          height: 110px;
+          margin: 0 auto;
+          margin-bottom: 10px; }
+        #headbox .showsp div a h3 {
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px; }
+        #headbox .showsp div a p {
+          color: orange;
+          height: 20px;
+          line-height: 20px; }
+
+.sb {
+  display: none; }

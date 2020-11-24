@@ -7,7 +7,7 @@ var showsp = document.querySelector('.showsp');
 var dissps = document.querySelectorAll('.showsp>div');
 var headbox = document.getElementById("headbox");
 
-for (var i = 0; i < navs.length - 2; i++) {
+for (var i = 1; i < navs.length - 2; i++) {
   navs[i].index = i;
 
   navs[i].onmouseenter = function () {
@@ -15,6 +15,7 @@ for (var i = 0; i < navs.length - 2; i++) {
     headbox.className = "head-b";
 
     for (var j = 0; j < dissps.length; j++) {
+      console.log(this.index);
       navs[j].className = " ";
       dissps[j].style.display = "none";
     }

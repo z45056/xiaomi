@@ -1,0 +1,47 @@
+.container, .breadcrumbs .title-address {
+  width: 1226px;
+  margin: 0 auto; }
+
+.breadcrumbs {
+  width: 100%;
+  height: 40px;
+  background-color: #F5F5F5; }
+  .breadcrumbs .title-address {
+    line-height: 40px; }
+    .breadcrumbs .title-address a {
+      font-size: 12px;
+      text-align: left;
+      margin-right: 5px; }
+      .breadcrumbs .title-address a:hover {
+        color: #FF6700; }
+
+.main {
+  width: 100%; }
+  .main .m-content {
+    min-height: 740px; }
+    .main .m-content .displaybox {
+      padding-top: 14px;
+      cursor: pointer; }
+      .main .m-content .displaybox .mlist {
+        width: 1226px;
+        height: 60px;
+        line-height: 60px;
+        color: #FF6700; }
+        .main .m-content .displaybox .mlist span {
+          margin: 0 10px; }
+        .main .m-content .displaybox .mlist h2 {
+          display: inline-block;
+          margin-left: 20px; }
+      .main .m-content .displaybox .listdisplay {
+        width: 1226px;
+        border-top: 1px solid #e0e0e0; }
+        .main .m-content .displaybox .listdisplay li {
+          float: left;
+          width: 245px;
+          height: 160px;
+          box-sizing: border-box;
+          border-right: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0; }
+
+.list-active {
+  display: block; }
