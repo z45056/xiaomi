@@ -113,3 +113,23 @@ for (var i = 0; i < b_sublist.length; i++) {
     }, 3000);
   };
 } //小米闪购banner图
+
+
+var f_perv = document.querySelector(".flashpay .select .f_perv");
+var f_next = document.querySelector(".flashpay .select .f_next"); // 人工客服****************************************************
+
+var qr = document.querySelector(".Qr");
+var followimg = document.querySelector(".followimg");
+console.log(followimg);
+
+qr.onclick = function () {
+  console.log("哈哈哈 ");
+};
+
+qr.onmouseenter = function () {
+  followimg.style.display = "block";
+};
+
+qr.onmouseleave = function () {
+  followimg.style.display = "none";
+};

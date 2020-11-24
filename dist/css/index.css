@@ -1,3 +1,7 @@
+.container {
+  width: 1226px;
+  margin: 0 auto; }
+
 .box-s, .head-b, #headbox .head .search input, #headbox .showsp div a, .b_list .banner ol li, .main .flashpay .select span {
   box-sizing: border-box; }
 
@@ -398,3 +402,83 @@
               height: 339px;
               float: left;
               background-color: greenyellow; }
+  .main .m-adv {
+    width: 1226px;
+    height: 120px;
+    margin: 20px auto; }
+    .main .m-adv a {
+      display: block;
+      width: 1226px;
+      height: 120px; }
+      .main .m-adv a img {
+        width: 100%;
+        height: 100%; }
+  .main .mobile-n {
+    position: relative;
+    width: 1226px;
+    height: 58px;
+    margin: 0 auto; }
+    .main .mobile-n h2 {
+      float: left;
+      font-size: 22px;
+      line-height: 58px;
+      text-align: left; }
+    .main .mobile-n a {
+      display: block;
+      float: right;
+      font-size: 16px;
+      line-height: 58px; }
+      .main .mobile-n a:hover {
+        color: #ff6700; }
+  .main .mobile {
+    margin: 0 auto;
+    height: 614px;
+    width: 1226px; }
+    .main .mobile .mr {
+      width: 234px;
+      height: 614px;
+      float: left; }
+      .main .mobile .mr img {
+        width: 100%;
+        height: 100%; }
+    .main .mobile .ml {
+      width: 992px;
+      height: 614px;
+      float: right; }
+      .main .mobile .ml ul {
+        width: 992px;
+        height: 614px; }
+        .main .mobile .ml ul li {
+          width: 234px;
+          height: 260px;
+          padding: 20px 0;
+          float: left;
+          margin: 0 0 14px 14px;
+          background-color: #fff; }
+          .main .mobile .ml ul li:hover {
+            transition: all .2s linear;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: translate3d(0, -2px, 0);
+            z-index: 2; }
+          .main .mobile .ml ul li a {
+            display: block;
+            width: 234px;
+            height: 260px;
+            text-align: center; }
+            .main .mobile .ml ul li a img {
+              width: 160px;
+              height: 160px;
+              display: block;
+              margin: 0 auto 20px; }
+            .main .mobile .ml ul li a .m-content {
+              display: block;
+              color: #b0b0b0;
+              margin-top: 10px; }
+            .main .mobile .ml ul li a .m-name {
+              display: block;
+              color: #333;
+              margin-top: 12px; }
+            .main .mobile .ml ul li a .price {
+              display: block;
+              color: #ff6700;
+              margin-top: 10px; }

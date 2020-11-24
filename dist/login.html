@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米账号-登录</title>
+    <link rel="stylesheet" href="./css/pc-reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="../js/utils.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="head container">
+            <a href="index.html">
+                <img src="../img/mistore_logo.png" alt="">
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="main">
+            <div class="m container">
+                <div class="loginbox">
+                    <div class="lr">
+                        <span class="active" style="border-left-color:#fff ;">账号登录</span>
+                        <span>扫码登录</span>
+                    </div> 
+                    <div class="box">
+                        <div class="loginbox-1"  >
+                            <div class="loginipt">
+                                <input type="text" class="username" value="" placeholder="邮箱/手机号码/小米ID"> 
+                                <input type="password" class="password" value="" placeholder="密码"> 
+                            </div>
+                            <button class="login-button">登录</button>
+                            <div class="other">
+                                <a href="#">手机短信登录/注册</a>
+                                <div class="zc">
+                                    <a href="#">立即注册</a>
+                                    <span>|</span>
+                                    <a href="">忘记密码?</a>
+                                </div>
+                                <ul class="y-display">
+                                    <li><a href="#" class="a1"><i></i></a></li>
+                                    <li><a href="#" class="a2"><i></i></a></li>
+                                    <li><a href="#" class="a3"><i></i></a></li>
+                                    <li><a href="#" class="a4"><i></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="loginbox-2" style="display: none;">
+                            <p>请使用小米手机米家等小米旗下APP扫码登录</p>
+                            <div id="qr">
+                                <div class="wait">
+                                    <img src="../img/index.png" alt="">
+                                    <!-- <div class="overtime">
+                                        <p>二维码过期</p>
+                                        <button class="overbtn">刷新</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <p class="xmapp">使用<i style="color: #FF6700;">小米商城APP</i>扫一扫</p>
+                            <p class="xmset">小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <script>
+            var spans = document.querySelectorAll(".lr span");
+            var boxs = document.querySelectorAll(".box>div");
+            var imgtime = document.querySelector("#qr .wait img");
+            var a =document.querySelector("#qr .wait");
+            var addimg = '<img src='+'"../img/index.png"'+' alt="">'
+            var overtime = '<div class="overtime"><p>二维码过期</p><button class="overbtn">刷新</button></div>';
+            // console.log(boxs);
+            var overtimer;
+            // console.log(spans);
+            for(var i = 0 ;i <spans.length;i++){
+                spans[i].index = i
+                spans[i].onclick = function(){
+                    for(var j = 0 ;j < spans.length;j++){
+                        spans[j].className = ""
+                        boxs[j].style.display = "none"
+                    }
+                    spans[this.index].className = "active"
+                    boxs[this.index].style.display = "block"
+                    
+                }
+                if(this.index = 1){
+                        console.log("yes")
+                        setInterval(() => {
+                        imgtime.style.opacity = "0.4";
+                        a.innerHTML = overtime;
+                        var b = document.querySelector(".overtime")
+                        b.lastChild.onclick = function(){
+                            a.innerHTML = addimg;
+                            
+                            }    
+                        }, 10000);
+           
+                    }else{
+                        console.log("no");
+                    }
+            }
+            // if()
+        </script>
+
+
+
+
+
+
+
+
+        <!-- 尾部 -->
+        <div class="login-ft clearfix">
+            <div class="ft-links">
+                <a href="#" style="color: #333;">简体</a>|
+                <a href="#">繁体</a>|
+                <a href="#">English</a>|
+                <a href="#">常见问题</a>|
+                <a href="#">隐私政策</a>
+                <p>小米公司版权所有京ICP备10046444-
+                    <a href="#"><img src="../img/china.png">京公网安备11010802020134号</a>京ICP证110507号
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
