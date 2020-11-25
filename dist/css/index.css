@@ -2,10 +2,10 @@
   width: 1226px;
   margin: 0 auto; }
 
-.box-s, .head-b, #headbox .head .search input, #headbox .showsp div a, .b_list .banner ol li, .main .flashpay .select span {
+.box-s, .b_list .banner ol li, .main .flashpay .select span {
   box-sizing: border-box; }
 
-.tc, #headbox .head .head-nav ul li a {
+.tc {
   text-align: center; }
 
 .app {
@@ -88,129 +88,6 @@
         float: left;
         font-size: 12px;
         line-height: 40px; }
-
-.h-wh, #headbox .head .logo, #headbox .head .head-nav, #headbox .head .head-nav ul {
-  height: 100px;
-  float: left; }
-
-.nav-active a {
-  color: orange; }
-
-.show-active {
-  display: block; }
-
-.head-b {
-  border-bottom: 1px solid silver; }
-
-#headbox {
-  width: 100%; }
-  #headbox .head {
-    position: relative;
-    width: 1226px;
-    height: 100px;
-    margin: 0 auto; }
-    #headbox .head .logo {
-      width: 100px; }
-      #headbox .head .logo a {
-        display: block;
-        width: 55px;
-        height: 55px;
-        position: relative;
-        top: 22px;
-        background-color: #FF6700; }
-        #headbox .head .logo a:hover {
-          content: url(../img/mi-home.png); }
-        #headbox .head .logo a:after {
-          content: url(../img/mi-logo.png);
-          position: absolute;
-          width: 49px;
-          height: 49px;
-          background-position: 10px 10px;
-          top: 4px;
-          left: 4px; }
-    #headbox .head .head-nav {
-      width: 750px;
-      padding-left: 30px; }
-      #headbox .head .head-nav ul li {
-        float: left; }
-        #headbox .head .head-nav ul li a {
-          display: block;
-          padding: 0 10px;
-          line-height: 100px;
-          font-size: 16px; }
-    #headbox .head .search {
-      width: 300px;
-      padding: 25px 0;
-      height: 50px;
-      float: right; }
-      #headbox .head .search input {
-        width: 250px;
-        height: 50px;
-        border: 1px solid gainsboro;
-        float: left;
-        font-size: 16px; }
-      #headbox .head .search button {
-        float: left;
-        width: 50px;
-        height: 50px;
-        border: 1px solid gainsboro;
-        border-left: unset; }
-    #headbox .head .list {
-      position: absolute;
-      width: 234px;
-      height: 420px;
-      top: 101px;
-      left: 0;
-      background-color: #474549;
-      z-index: 999;
-      padding: 20px 0;
-      opacity: 0.6; }
-      #headbox .head .list li {
-        height: 42px;
-        padding: 0 0 0 30px;
-        background-color: #474549; }
-        #headbox .head .list li a {
-          font-size: 14px;
-          line-height: 42px;
-          color: #fff; }
-        #headbox .head .list li:hover {
-          background-color: #FF6700; }
-  #headbox .showsp {
-    width: 100%;
-    margin: 0 auto;
-    height: 200px;
-    position: absolute;
-    top: 261px;
-    left: 0;
-    background-color: #fff;
-    z-index: 9999;
-    box-shadow: darkgrey 0 5px 5px; }
-    #headbox .showsp div {
-      margin: 0 auto;
-      height: 200px;
-      width: 1226px; }
-      #headbox .showsp div a {
-        float: left;
-        display: block;
-        width: 204px;
-        height: 200px;
-        text-align: center;
-        font-size: 12px;
-        padding-top: 30px; }
-        #headbox .showsp div a img {
-          display: block;
-          width: 160px;
-          height: 110px;
-          margin: 0 auto;
-          margin-bottom: 10px; }
-        #headbox .showsp div a h3 {
-          height: 20px;
-          line-height: 20px;
-          font-size: 12px; }
-        #headbox .showsp div a p {
-          color: orange;
-          height: 20px;
-          line-height: 20px; }
 
 .b-show {
   z-index: 10; }

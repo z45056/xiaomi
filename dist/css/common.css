@@ -263,15 +263,40 @@
         box-shadow: 0 5px 5px #aaa7ad;
         z-index: 999;
         padding: 20px 0; }
-        #headbox .head .allsp .list li {
+        #headbox .head .allsp .list .listsp {
           height: 42px;
           padding: 0 0 0 30px; }
-          #headbox .head .allsp .list li a {
+          #headbox .head .allsp .list .listsp a {
             font-size: 14px;
             line-height: 42px;
             color: #5d5b5f; }
-          #headbox .head .allsp .list li:hover {
+          #headbox .head .allsp .list .listsp ol {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 3px 1px 3px 3px #aaa7ad;
+            top: 0;
+            left: 234px;
+            width: 992px;
+            height: 460px; }
+            #headbox .head .allsp .list .listsp ol li {
+              float: left;
+              width: 248px;
+              height: 76px;
+              box-sizing: border-box;
+              padding: 18px 20px;
+              background-color: antiquewhite; }
+              #headbox .head .allsp .list .listsp ol li img {
+                width: 40px;
+                height: 40px; }
+              #headbox .head .allsp .list .listsp ol li span {
+                line-height: 40px;
+                margin-left: 10px;
+                font-size: 14px; }
+          #headbox .head .allsp .list .listsp:hover {
             background-color: #FF6700; }
+            #headbox .head .allsp .list .listsp:hover ol {
+              display: block; }
     #headbox .head .head-nav {
       width: 650px; }
       #headbox .head .head-nav ul li {
@@ -311,7 +336,8 @@
     #headbox .showsp div {
       margin: 0 auto;
       height: 200px;
-      width: 1226px; }
+      width: 1226px;
+      overflow: hidden; }
       #headbox .showsp div a {
         float: left;
         display: block;
@@ -322,7 +348,7 @@
         padding-top: 30px; }
         #headbox .showsp div a img {
           display: block;
-          width: 160px;
+          width: 140px;
           height: 110px;
           margin: 0 auto;
           margin-bottom: 10px; }

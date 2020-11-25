@@ -1,9 +1,12 @@
 [
-    {"title":"小米10 至尊纪念版","imgurl":"img/goods1.png","price":"￥168","code":"abc1"}
-
-
-
-
-    
-
+    {"title":"小米10 至尊纪念版","imgurl":"../img/jsonimg/xm1.png","price":"￥5999","code":"xm1"},
+    {"title":"小米9 青春版","imgurl":"../img/jsonimg/xm2.png","price":"￥5999","code":"xm2"},
+    {"title":"小米9s ","imgurl":"../img/jsonimg/xm3.jpg","price":"￥5999","code":"xm3"},
+    {"title":"黑鲨3 纪念版","imgurl":"../img/jsonimg/xm4.png","price":"￥5999","code":"xm4"},
+    {"title":"小米7 至尊纪念版","imgurl":"../img/jsonimg/xm5.png","price":"￥5999","code":"xm5"},
+    {"title":"小米5 至尊纪念版","imgurl":"../img/jsonimg/xm6.jpg","price":"￥5999","code":"xm6"},
+    {"title":"小米4 至尊纪念版","imgurl":"../img/jsonimg/xm7.jpg","price":"￥5999","code":"xm7"},
+    {"title":"小米2 纪念版","imgurl":"../img/jsonimg/xm8.png","price":"￥5999","code":"xm8"},
+    {"title":"小米8 至尊纪念版","imgurl":"../img/jsonimg/xm9.jpg","price":"￥5999","code":"xm9"},
+    {"title":"小米8s 纪念版","imgurl":"../img/jsonimg/xm10.png","price":"￥5999","code":"xm10"}
 ]

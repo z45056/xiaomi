@@ -39,9 +39,25 @@
           float: left;
           width: 245px;
           height: 160px;
+          padding-top: 24px;
           box-sizing: border-box;
           border-right: 1px solid #e0e0e0;
           border-bottom: 1px solid #e0e0e0; }
+          .main .m-content .displaybox .listdisplay li a {
+            display: block;
+            width: 244px;
+            height: 130px;
+            text-align: center; }
+            .main .m-content .displaybox .listdisplay li a img {
+              display: block;
+              width: 70px;
+              height: 70px;
+              margin: 0 auto;
+              margin-bottom: 24px;
+              text-align: center; }
+            .main .m-content .displaybox .listdisplay li a span {
+              display: block;
+              font-size: 14px; }
 
 .list-active {
   display: block; }

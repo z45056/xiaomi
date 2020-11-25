@@ -1,0 +1,159 @@
+.cart {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #FF6700; }
+  .cart .cart-content {
+    height: 48px;
+    padding-top: 28px;
+    margin: 0 auto;
+    width: 1226px; }
+    .cart .cart-content .c-logo {
+      float: left;
+      width: 93px;
+      height: 48px; }
+      .cart .cart-content .c-logo img {
+        width: 48px;
+        height: 48px; }
+    .cart .cart-content h2 {
+      float: left;
+      width: 140px;
+      height: 48px;
+      font-size: 28px;
+      line-height: 48px; }
+    .cart .cart-content p {
+      display: block;
+      float: left;
+      margin-top: 28px;
+      margin-left: 12px;
+      width: 336px;
+      height: 20px;
+      font-size: 12px; }
+    .cart .cart-content .user-content {
+      float: right;
+      width: 150px;
+      height: 40px; }
+      .cart .cart-content .user-content span {
+        width: 99px;
+        line-height: 64px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 5px; }
+
+.c-main {
+  padding: 30px 0;
+  background-color: #F5F5F5; }
+  .c-main .tip {
+    width: 1226px;
+    margin: 0 auto;
+    height: 20px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px; }
+    .c-main .tip span {
+      color: #FF6700; }
+  .c-main .goods-list {
+    margin: 0 auto;
+    width: 1226px; }
+    .c-main .goods-list .cart-warp {
+      background-color: #fff;
+      width: 1226px; }
+      .c-main .goods-list .cart-warp .list-head {
+        height: 70px; }
+        .c-main .goods-list .cart-warp .list-head div {
+          float: left;
+          line-height: 70px;
+          font-size: 14px;
+          text-align: center; }
+        .c-main .goods-list .cart-warp .list-head .check {
+          width: 110px; }
+          .c-main .goods-list .cart-warp .list-head .check input {
+            margin-right: 5px; }
+        .c-main .goods-list .cart-warp .list-head .goods-img {
+          width: 120px; }
+        .c-main .goods-list .cart-warp .list-head .sp {
+          width: 380px;
+          text-align: left; }
+        .c-main .goods-list .cart-warp .list-head .once-price {
+          width: 158px; }
+        .c-main .goods-list .cart-warp .list-head .mun {
+          width: 150px; }
+        .c-main .goods-list .cart-warp .list-head .tatol {
+          width: 200px; }
+        .c-main .goods-list .cart-warp .list-head .action {
+          width: 80px; }
+      .c-main .goods-list .cart-warp .list-body {
+        height: 86px;
+        padding: 15px 0; }
+        .c-main .goods-list .cart-warp .list-body div {
+          float: left;
+          line-height: 86px;
+          font-size: 14px;
+          text-align: center; }
+        .c-main .goods-list .cart-warp .list-body .list-check {
+          width: 110px; }
+          .c-main .goods-list .cart-warp .list-body .list-check input {
+            margin-right: 5px; }
+        .c-main .goods-list .cart-warp .list-body .list-img {
+          width: 120px;
+          margin-top: 3px; }
+          .c-main .goods-list .cart-warp .list-body .list-img img {
+            float: left;
+            width: 80px;
+            height: 80px; }
+        .c-main .goods-list .cart-warp .list-body .list-sp {
+          width: 380px;
+          text-align: left; }
+        .c-main .goods-list .cart-warp .list-body .list-price {
+          width: 158px; }
+        .c-main .goods-list .cart-warp .list-body .list-mun {
+          width: 150px; }
+        .c-main .goods-list .cart-warp .list-body .list-tatol {
+          width: 200px; }
+        .c-main .goods-list .cart-warp .list-body .list-action {
+          width: 80px; }
+          .c-main .goods-list .cart-warp .list-body .list-action span {
+            font-size: 14px;
+            background-color: #fff;
+            padding: 0 5px;
+            border-radius: 100%;
+            cursor: pointer; }
+            .c-main .goods-list .cart-warp .list-body .list-action span:hover {
+              background-color: red; }
+    .c-main .goods-list .cart-bar {
+      background-color: #fff;
+      height: 50px;
+      margin-top: 20px; }
+      .c-main .goods-list .cart-bar .select {
+        width: 275px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 50px;
+        float: left; }
+        .c-main .goods-list .cart-bar .select a {
+          padding: 0 10px 0 20px; }
+        .c-main .goods-list .cart-bar .select span {
+          padding-left: 10px; }
+        .c-main .goods-list .cart-bar .select i {
+          font-style: normal;
+          color: #FF6700; }
+      .c-main .goods-list .cart-bar .paybox {
+        width: 350px;
+        height: 50px;
+        line-height: 50px;
+        float: right; }
+        .c-main .goods-list .cart-bar .paybox span {
+          color: #FF6700; }
+          .c-main .goods-list .cart-bar .paybox span em {
+            font-size: 20px; }
+        .c-main .goods-list .cart-bar .paybox a {
+          float: right;
+          margin-left: 35px;
+          margin-top: 0px;
+          text-align: center;
+          font-size: 20px;
+          vertical-align: middle;
+          width: 200px;
+          height: 50px;
+          background-color: #FF6700;
+          color: white; }

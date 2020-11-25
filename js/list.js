@@ -15,3 +15,21 @@ for(var i = 0 ; i< mlists.length ; i++){
 }
 
 
+var mlistbox = document.querySelectorAll(".displaybox .listdisplay");
+console.log(mlistbox[0]);
+
+ajax({
+  url:'http://127.0.0.1:5500/data/product.json',
+  type: 'get',
+  dataType:'json',
+  type: 'get',
+  success:function(json){
+    var mlistdata = '';
+    json.forEach(element => {
+      console.log(element.imgurl)
+      mlistdata += '<li><a href="#"><img src='+ element.imgurl+' alt=""><span>'+element.title +'</span></a></li>'
+    });
+    mlistbox[0].innerHTML = mlistdata;
+  
+  }
+})

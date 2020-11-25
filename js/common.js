@@ -29,6 +29,37 @@ allsp.onmouseenter = function(){
 }
 
 
+//**************
+var showspbox = document.querySelectorAll('.showsp div');
+console.log(showspbox[0]);
+
+var ollist = document.querySelectorAll(".list ol");
+console.log(ollist[0]);
+  ajax({
+    url:'http://127.0.0.1:5500/data/product.json',
+    type: 'get',
+    dataType:'json',
+    type: 'get',
+    success:function(json){
+      console.log(json)
+      var spdata = '';
+      var mlistdata = '';
+      var listdata = '';
+      json.forEach(element => {
+        console.log(element.imgurl)
+        spdata += '<a href="#"><img src='+ element.imgurl+' alt=""><h3>'+element.title +'</h3><p>'+element.price+'</p></a>'
+        mlistdata += '<li><a href="#"><img src='+ element.imgurl+' alt=""><span>'+element.title +'</span></a></li>'
+        // listdata += ''
+      });
+      showspbox[0].innerHTML = spdata;
+      ollist[0].innerHTML = mlistdata;
+
+    }
+  })
+
+
+
+
 
 
 

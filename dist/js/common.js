@@ -1,5 +1,9 @@
 "use strict";
 
+var _ajax;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // 头部**********************
 var nav = document.querySelector(".head-nav");
 var navs = document.querySelectorAll(".head-nav ul li");
@@ -33,4 +37,27 @@ var allsp = document.querySelector(".allsp");
 
 allsp.onmouseenter = function () {
   showsp.style.display = "none";
-};
+}; //**************
+
+
+var showspbox = document.querySelectorAll('.showsp div');
+console.log(showspbox[0]);
+var ollist = document.querySelectorAll(".list ol");
+console.log(ollist[0]);
+ajax((_ajax = {
+  url: 'http://127.0.0.1:5500/data/product.json',
+  type: 'get',
+  dataType: 'json'
+}, _defineProperty(_ajax, "type", 'get'), _defineProperty(_ajax, "success", function success(json) {
+  console.log(json);
+  var spdata = '';
+  var mlistdata = '';
+  var listdata = '';
+  json.forEach(function (element) {
+    console.log(element.imgurl);
+    spdata += '<a href="#"><img src=' + element.imgurl + ' alt=""><h3>' + element.title + '</h3><p>' + element.price + '</p></a>';
+    mlistdata += '<li><a href="#"><img src=' + element.imgurl + ' alt=""><span>' + element.title + '</span></a></li>'; // listdata += ''
+  });
+  showspbox[0].innerHTML = spdata;
+  ollist[0].innerHTML = mlistdata;
+}), _ajax));
