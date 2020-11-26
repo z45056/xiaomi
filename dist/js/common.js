@@ -1,6 +1,6 @@
 "use strict";
 
-var _ajax;
+var _ajax, _ajax2, _ajax3;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -52,12 +52,40 @@ ajax((_ajax = {
   console.log(json);
   var spdata = '';
   var mlistdata = '';
-  var listdata = '';
   json.forEach(function (element) {
-    console.log(element.imgurl);
     spdata += '<a href="#"><img src=' + element.imgurl + ' alt=""><h3>' + element.title + '</h3><p>' + element.price + '</p></a>';
     mlistdata += '<li><a href="#"><img src=' + element.imgurl + ' alt=""><span>' + element.title + '</span></a></li>'; // listdata += ''
   });
   showspbox[0].innerHTML = spdata;
   ollist[0].innerHTML = mlistdata;
 }), _ajax));
+ajax((_ajax2 = {
+  url: 'http://127.0.0.1:5500/data/tv.json',
+  type: 'get',
+  dataType: 'json'
+}, _defineProperty(_ajax2, "type", 'get'), _defineProperty(_ajax2, "success", function success(json) {
+  console.log(json);
+  var spdata = '';
+  var mlistdata = '';
+  json.forEach(function (element) {
+    spdata += '<a href="#"><img src=' + element.imgurl + ' alt=""><h3>' + element.title + '</h3><p>' + element.price + '</p></a>';
+    mlistdata += '<li><a href="#"><img src=' + element.imgurl + ' alt=""><span>' + element.title + '</span></a></li>'; // listdata += ''
+  });
+  showspbox[1].innerHTML = spdata;
+  ollist[1].innerHTML = mlistdata;
+}), _ajax2));
+ajax((_ajax3 = {
+  url: 'http://127.0.0.1:5500/data/product.json',
+  type: 'get',
+  dataType: 'json'
+}, _defineProperty(_ajax3, "type", 'get'), _defineProperty(_ajax3, "success", function success(json) {
+  console.log(json);
+  var spdata = '';
+  var mlistdata = '';
+  json.forEach(function (element) {
+    spdata += '<a href="#"><img src=' + element.imgurl + ' alt=""><h3>' + element.title + '</h3><p>' + element.price + '</p></a>';
+    mlistdata += '<li><a href="#"><img src=' + element.imgurl + ' alt=""><span>' + element.title + '</span></a></li>'; // listdata += ''
+  });
+  showspbox[2].innerHTML = spdata;
+  ollist[2].innerHTML = mlistdata;
+}), _ajax3));

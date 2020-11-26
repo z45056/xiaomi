@@ -12,6 +12,14 @@
     height: 60px;
     margin: 0 auto;
     width: 1226px; }
+    .xmproduct .product-content h2 {
+      float: left;
+      line-height: 60px; }
+    .xmproduct .product-content div {
+      float: right;
+      line-height: 60px; }
+      .xmproduct .product-content div a {
+        padding: 0 5px; }
 
 .product-details {
   margin-top: 32px;
@@ -30,7 +38,7 @@
         background-color: powderblue;
         position: relative; }
         .product-details .product-box .details-l .display-img ul {
-          width: 560px;
+          width: 3000px;
           height: 560px; }
           .product-details .product-box .details-l .display-img ul li {
             position: absolute;

@@ -1,5 +1,9 @@
 "use strict";
 
+var _ajax;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // 头部**********************
 var nav = document.querySelector(".head-nav ul");
 var navs = document.querySelectorAll(".head-nav ul li");
@@ -116,8 +120,66 @@ for (var i = 0; i < b_sublist.length; i++) {
 } //小米闪购banner图
 
 
-var f_perv = document.querySelector(".flashpay .select .f_perv");
-var f_next = document.querySelector(".flashpay .select .f_next"); // 人工客服****************************************************
+var f_perv = $1(".flashpay .select .f_perv");
+var f_next = $1(".flashpay .select .f_next");
+var list_scoll = $1(".scoll");
+var f_product_list = $2(".scoll ul li");
+var list_index = 0;
+var f_timer;
+var list_length = f_product_list.length;
+var list_width = f_product_list[0].clientWidth;
+p_autoplay();
+
+function p_autoplay() {
+  f_timer = setInterval(function () {
+    f_moveNext();
+  }, 3000);
+}
+
+f_next.onclick = function () {
+  clearInterval(f_timer);
+  f_moveNext();
+  setTimeout(function () {
+    p_autoplay();
+  }, 2000);
+};
+
+f_perv.onclick = function () {
+  clearInterval(f_timer);
+  f_movePerv();
+  setTimeout(function () {
+    p_autoplay();
+  }, 2000);
+};
+
+function f_moveNext() {
+  list_index++;
+
+  if (list_index > list_length - 1) {
+    list_index = 0;
+    list_scoll.scrollLeft = 0;
+  }
+
+  animate(list_scoll, {
+    'scrollLeft': list_index * list_width
+  });
+  console.log(555);
+}
+
+function f_movePerv() {
+  list_index--;
+
+  if (list_index < 0) {
+    list_index = list_length;
+    list_scoll = list_index * list_width;
+  }
+
+  animate(list_scoll, {
+    'scrollLeft': list_index * list_width
+  });
+  console.log(666);
+} // 人工客服****************************************************
+
 
 var qr = document.querySelector(".Qr");
 var followimg = document.querySelector(".followimg");
@@ -134,3 +196,18 @@ qr.onmouseenter = function () {
 qr.onmouseleave = function () {
   followimg.style.display = "none";
 };
+
+var mobile_list = $1(".ml ul");
+console.log(mobile_list);
+ajax((_ajax = {
+  url: 'http://127.0.0.1:5500/data/product.json',
+  type: 'get',
+  dataType: 'json'
+}, _defineProperty(_ajax, "type", 'get'), _defineProperty(_ajax, "success", function success(json) {
+  var ml_mobile_data = '';
+  json.forEach(function (element) {
+    ml_mobile_data += '<li><a href="goods.html"><img src="' + element.imgurl + '" alt=""><p class="m-name">' + element.title + '</p><span class="m-content">' + element.parameter + '</span><p class="price">' + element.price + '元起&nbsp;<del>6299元</del></p></a></li>';
+  });
+  console.log(ml_mobile_data);
+  mobile_list.innerHTML = ml_mobile_data;
+}), _ajax));

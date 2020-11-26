@@ -1,3 +1,6 @@
+.font-white {
+  color: #fff; }
+
 .container {
   width: 1226px;
   margin: 0 auto; }
@@ -263,7 +266,7 @@
       .main .mb .m-banner .scoll {
         width: 978px;
         height: 340px;
-        overflow: hidden; }
+        overflow-x: hidden; }
         .main .mb .m-banner .scoll ul {
           width: 4000px;
           height: 340px; }
@@ -278,7 +281,7 @@
               width: 234px;
               height: 339px;
               float: left;
-              background-color: greenyellow; }
+              background-color: #fff; }
   .main .m-adv {
     width: 1226px;
     height: 120px;
@@ -309,8 +312,9 @@
         color: #ff6700; }
   .main .mobile {
     margin: 0 auto;
-    height: 614px;
-    width: 1226px; }
+    height: 620px;
+    width: 1226px;
+    padding-bottom: 20px; }
     .main .mobile .mr {
       width: 234px;
       height: 614px;
@@ -324,7 +328,8 @@
       float: right; }
       .main .mobile .ml ul {
         width: 992px;
-        height: 614px; }
+        height: 614px;
+        overflow: hidden; }
         .main .mobile .ml ul li {
           width: 234px;
           height: 260px;
@@ -343,8 +348,8 @@
             height: 260px;
             text-align: center; }
             .main .mobile .ml ul li a img {
-              width: 160px;
-              height: 160px;
+              width: 140px;
+              height: 140px;
               display: block;
               margin: 0 auto 20px; }
             .main .mobile .ml ul li a .m-content {

@@ -70,6 +70,7 @@
           .c-main .goods-list .cart-warp .list-head .check input {
             margin-right: 5px; }
         .c-main .goods-list .cart-warp .list-head .goods-img {
+          height: 70px;
           width: 120px; }
         .c-main .goods-list .cart-warp .list-head .sp {
           width: 380px;

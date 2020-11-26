@@ -44,15 +44,51 @@ console.log(ollist[0]);
       console.log(json)
       var spdata = '';
       var mlistdata = '';
-      var listdata = '';
       json.forEach(element => {
-        console.log(element.imgurl)
         spdata += '<a href="#"><img src='+ element.imgurl+' alt=""><h3>'+element.title +'</h3><p>'+element.price+'</p></a>'
         mlistdata += '<li><a href="#"><img src='+ element.imgurl+' alt=""><span>'+element.title +'</span></a></li>'
         // listdata += ''
       });
       showspbox[0].innerHTML = spdata;
       ollist[0].innerHTML = mlistdata;
+
+    }
+  })
+  ajax({
+    url:'http://127.0.0.1:5500/data/tv.json',
+    type: 'get',
+    dataType:'json',
+    type: 'get',
+    success:function(json){
+      console.log(json)
+      var spdata = '';
+      var mlistdata = '';
+      json.forEach(element => {
+        spdata += '<a href="#"><img src='+ element.imgurl+' alt=""><h3>'+element.title +'</h3><p>'+element.price+'</p></a>'
+        mlistdata += '<li><a href="#"><img src='+ element.imgurl+' alt=""><span>'+element.title +'</span></a></li>'
+        // listdata += ''
+      });
+      showspbox[1].innerHTML = spdata;
+      ollist[1].innerHTML = mlistdata;
+
+    }
+  })
+  ajax({
+    url:'http://127.0.0.1:5500/data/product.json',
+    type: 'get',
+    dataType:'json',
+    type: 'get',
+    success:function(json){
+      console.log(json)
+      var spdata = '';
+      var mlistdata = '';
+      json.forEach(element => {
+        spdata += '<a href="#"><img src='+ element.imgurl+' alt=""><h3>'+element.title +'</h3><p>'+element.price+'</p></a>'
+        mlistdata += '<li><a href="#"><img src='+ element.imgurl+' alt=""><span>'+element.title +'</span></a></li>'
+        // listdata += ''
+      });
+      showspbox[2].innerHTML = spdata;
+      ollist[2].innerHTML = mlistdata;
 
     }
   })
