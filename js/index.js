@@ -171,11 +171,13 @@ ajax({
   success:function(json){
     var ml_mobile_data = '';
     json.forEach(element => {
-      ml_mobile_data += '<li><a href="goods.html"><img src="'+element.imgurl+'" alt=""><p class="m-name">'+ element.title+'</p><span class="m-content">'+element.parameter+'</span><p class="price">'+element.price+'元起&nbsp;<del>6299元</del></p></a></li>'
+      ml_mobile_data += '<li><a href="goods.html?code='+element.code+'"><img src="'+element.imgurl+'" alt=""><p class="m-name">'+ element.title+'</p><span class="m-content">'+element.parameter+'</span><p class="price">'+element.price+'元起&nbsp;<del>6299元</del></p></a></li>'
     });
     console.log(ml_mobile_data);
     mobile_list.innerHTML = ml_mobile_data; 
     
   }
 })
+
+
 

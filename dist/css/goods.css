@@ -38,7 +38,7 @@
         background-color: powderblue;
         position: relative; }
         .product-details .product-box .details-l .display-img ul {
-          width: 3000px;
+          width: 560px;
           height: 560px; }
           .product-details .product-box .details-l .display-img ul li {
             position: absolute;
@@ -85,15 +85,113 @@
     .product-details .product-box .details-r {
       width: 600px;
       height: 1000px;
-      background-color: powderblue; }
+      z-index: 9; }
       .product-details .product-box .details-r h2 {
         height: 36px;
         line-height: 36px;
         font-size: 24px;
         text-align: left; }
       .product-details .product-box .details-r p {
-        height: 50px;
+        height: 84px;
         margin-top: 8px;
         font-size: 14px;
         line-height: 15px;
         color: #ccc; }
+      .product-details .product-box .details-r .company-info {
+        height: 21px;
+        line-height: 21px;
+        font-size: 14px;
+        margin-top: 10px; }
+      .product-details .product-box .details-r .price-p {
+        height: 20px;
+        margin: 10px 0; }
+        .product-details .product-box .details-r .price-p span {
+          font-size: 18px;
+          color: #FF6700; }
+        .product-details .product-box .details-r .price-p del {
+          font-size: 14px; }
+      .product-details .product-box .details-r .activity-box {
+        height: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ccc; }
+      .product-details .product-box .details-r .p-address {
+        margin-top: 20px;
+        height: 104px;
+        box-sizing: border-box;
+        padding: 30px 50px;
+        background-color: #FAFAFA;
+        border: 1px solid #ccc; }
+        .product-details .product-box .details-r .p-address p i {
+          line-height: 22px;
+          padding-right: 5px;
+          font-style: normal; }
+      .product-details .product-box .details-r .buy-option .title {
+        height: 27px;
+        margin: 10px 0; }
+        .product-details .product-box .details-r .buy-option .title strong {
+          font-size: 18px;
+          line-height: 27px; }
+      .product-details .product-box .details-r .buy-option .ram-option {
+        height: 108px; }
+        .product-details .product-box .details-r .buy-option .ram-option a {
+          display: inline-block;
+          width: 290px;
+          margin-top: 10px;
+          margin-right: 5px;
+          height: 42px;
+          line-height: 42px;
+          text-align: center;
+          border: 1px solid #ccc; }
+          .product-details .product-box .details-r .buy-option .ram-option a:focus {
+            border: 2px solid #FF6700; }
+          .product-details .product-box .details-r .buy-option .ram-option a:hover {
+            border: 2px solid #FF6700; }
+      .product-details .product-box .details-r .buy-option .select-color {
+        height: 108px; }
+        .product-details .product-box .details-r .buy-option .select-color a {
+          display: inline-block;
+          width: 290px;
+          margin-top: 10px;
+          margin-right: 5px;
+          height: 42px;
+          line-height: 42px;
+          text-align: center;
+          border: 1px solid #ccc; }
+          .product-details .product-box .details-r .buy-option .select-color a:focus {
+            border: 2px solid #FF6700; }
+          .product-details .product-box .details-r .buy-option .select-color a:hover {
+            border: 2px solid #FF6700; }
+      .product-details .product-box .details-r .add-cart {
+        height: 200px; }
+        .product-details .product-box .details-r .add-cart p {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          background-color: #FAFAFA;
+          margin: 20px 0; }
+        .product-details .product-box .details-r .add-cart button {
+          width: 100px;
+          height: 40px;
+          background-color: #FF6700;
+          color: #fff; }
+
+.goods-tip {
+  width: 100%;
+  height: 316px;
+  background-color: #F5F5F5; }
+  .goods-tip .tip-container {
+    width: 1226px;
+    margin: 0 auto; }
+    .goods-tip .tip-container h2 {
+      display: block;
+      width: 1226px;
+      font-size: 20px;
+      height: 40px;
+      line-height: 60px;
+      margin: 20px 0;
+      background-color: #F5F5F5; }
+    .goods-tip .tip-container img {
+      width: 1226px;
+      display: block;
+      margin: 10px atuo; }

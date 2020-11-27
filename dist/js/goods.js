@@ -84,3 +84,21 @@ for (var i = 0; i < goods_index.length; i++) {
     }, 3000);
   };
 }
+
+var goods_url = location.search.split("?").join("").split("=");
+console.log(goods_url[1]);
+$.ajax({
+  url: "http://127.0.0.1:5500/data/product.json",
+  type: 'get',
+  dataType: 'json',
+  success: function success(json) {
+    var domStr = '';
+    $.each(json, function (index, obj) {
+      if (goods_url === obj.code) {
+        domStr += " <li><img src=\"../img/pms_1584945550.36678162.jpg\" alt=\"\"></li>\n              ";
+      }
+    });
+    $('.display_img').html(domStr);
+    console.log(222);
+  }
+});

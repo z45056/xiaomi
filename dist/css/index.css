@@ -176,6 +176,20 @@
     height: 170px;
     float: left;
     background-color: #5F5750; }
+    .sub-row .sublist a {
+      width: 77px;
+      height: 84px;
+      display: block;
+      float: left;
+      text-align: center; }
+      .sub-row .sublist a img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 20px auto  15px; }
+      .sub-row .sublist a span {
+        font-size: 12px;
+        color: #F1EDED; }
   .sub-row .subadv {
     height: 170px;
     float: right; }

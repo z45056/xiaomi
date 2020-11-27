@@ -1,4 +1,5 @@
-var all_select = document.querySelector(".all-select");
+$(()=>{
+    var all_select = document.querySelector(".all-select");
 var pay = document.querySelector(".pay");
 console.log(pay);
 
@@ -30,7 +31,6 @@ if(localStorage.getItem("goods")){
                 $.each(json,function (index,obj){
                   if ( item.code === obj.code ) {
                     var add_price = obj.price * item.num;
-                    
                     domStr += 
                         `<div class="list">
                             <div class="list-check">
@@ -50,8 +50,6 @@ if(localStorage.getItem("goods")){
                         `
                         }  
                     })
-
-                    
                     $('.list-body').append(domStr);
                     domStr = ''
                 })
@@ -84,16 +82,56 @@ if(localStorage.getItem("goods")){
     })
     var add_price = $(".list-body").children()
     console.log(add_price)
-    
-    
-    
-
 }
 
 
 
 
+$(".check input").click(function (){
+    if ($(this).prop('checked')) {
+        $('.list-body .list input').prop('checked',true)
+    } else {
+        $('.list-body .list input').prop('checked',false)
+    }
+})
+
+
+ $('.list-body').on('click','.list input ',function (){
+
+    //addmeony += $(this).parent().parent().children().eq(5).text();
+    $('.list-body .list input').each(function (index,ele){
+        changeAll()
+        
+    })
+    
+}) 
+
+function changeAll(){
+    var flag = true
+    $('.list-body .list input').each(function (index,ele){
+      if (!$(ele).prop('checked')) {
+        $(".check input").prop('checked',false)
+        flag = false
+        return false
+      }
+    })
+    if (flag) {
+      $(".check input").prop('checked',true)
+    }
+    if ($('.list-body .list input').length <= 0) {
+      $(".check input").prop('checked',false)
+    }
+}
+var add = $('.list-body .list input')
+console.log(add);
+
+  
 
 
 
 
+
+
+
+
+})
